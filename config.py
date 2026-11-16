@@ -1,3 +1,5 @@
-API_KEY = "12345-SECRET-API-KEY"
+import os
 
-DEBUG = True
+API_KEY = os.getenv("API_KEY", "")
+
+DEBUG = False
